@@ -24,6 +24,12 @@ docker build -t your-repo/your-image-name .
 docker push your-repo/your-image-name
 ```
 
+Note that you will need to be logged in to Docker to push:
+
+```
+docker login -u <username> -p <password>
+```
+
 ### Test it
 
 `docker run -it p 80:80 your-repo/your-image-name`
