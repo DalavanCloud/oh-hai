@@ -57,9 +57,9 @@
       <?php if(isset($_ENV["HOSTNAME"])) {?><h3>My hostname is <code><?php echo $_ENV["HOSTNAME"]; ?></code></h3><?php } ?>
       <?php
 
-      if(isset($_ENV["SLOPPY_DOMAIN"])) {
+      if(isset($_ENV["MARATHON_APP_LABEL_HAPROXY_0_VHOST"])) {
         ?>
-        <h3>My Domain is <code><?php echo $_ENV["SLOPPY_DOMAIN"]; ?></code></h3>
+        <h3>My Domain is <code><?php echo $_ENV["MARATHON_APP_LABEL_HAPROXY_0_VHOST"]; ?></code></h3>
         <?php
       }
       ?>
@@ -73,7 +73,7 @@
         <div class="center">
           <div class="inline-block p2 rounded inverted-blue has-arrow">
             <div class="arrow blue"></div>
-            This <code>MESSAGE</code> is an env var. Change it at "Settings => Env Vars" and click "Deploy changes now".
+            This <code>MESSAGE</code> is an env var. Change it at "Settings => Basic Setup => Environment Variables" and click "Deploy changes now".
           </div>
         </div>
       </div>
